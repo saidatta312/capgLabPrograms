@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 import com.capg.layeredarchitecture.dao.TraineeDao;
 import com.capg.layeredarchitecture.dao.TraineeDaoJdbcBasedImpl;
-import com.capg.layeredarchitecture.model.Trainee;
+import com.capg.layeredarchitecture.model.Student;
 
 public class TraineeServiceImpl implements TraineeService {
 	
@@ -14,7 +14,7 @@ public class TraineeServiceImpl implements TraineeService {
 	}
 
 	
-	public Trainee addTrainee(Trainee trainee) throws SQLException {
+	public Student addTrainee(Student trainee) throws SQLException {
 		return dao.addTrainee(trainee);
 		
 	}
@@ -26,7 +26,7 @@ public class TraineeServiceImpl implements TraineeService {
 	}
 
 
-	public Trainee getTrainee(int id) {
+	public Student getTrainee(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

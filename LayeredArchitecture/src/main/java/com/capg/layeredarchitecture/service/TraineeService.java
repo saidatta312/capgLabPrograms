@@ -2,14 +2,14 @@ package com.capg.layeredarchitecture.service;
 
 import java.sql.SQLException;
 
-import com.capg.layeredarchitecture.model.Trainee;
+import com.capg.layeredarchitecture.model.Student;
 
 
 
 public interface TraineeService {
 	
-	public Trainee addTrainee(Trainee trainee) throws SQLException;
+	public Student addTrainee(Student trainee) throws SQLException;
 	public void deleteTrainee(int id)throws SQLException;
-	public Trainee getTrainee(int id)throws SQLException;
+	public Student getTrainee(int id)throws SQLException;
 
 }

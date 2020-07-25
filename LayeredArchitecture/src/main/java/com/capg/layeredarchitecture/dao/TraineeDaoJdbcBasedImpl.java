@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import com.capg.layeredarchitecture.model.Trainee;
+import com.capg.layeredarchitecture.model.Student;
 
 
 
@@ -21,7 +21,7 @@ public class TraineeDaoJdbcBasedImpl implements TraineeDao {
 	}
 	
 	
-	public Trainee addTrainee(Trainee trainee) throws SQLException {
+	public Student addTrainee(Student trainee) throws SQLException {
 		ps=con.prepareStatement("insert into trainee values(?,?,?)");
 		ps.setInt(1, trainee.getId());
 		ps.setString(2, trainee.getName());
@@ -36,7 +36,7 @@ public class TraineeDaoJdbcBasedImpl implements TraineeDao {
 	}
 
 	
-	public Trainee findTrainee(int id) {
+	public Student findTrainee(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

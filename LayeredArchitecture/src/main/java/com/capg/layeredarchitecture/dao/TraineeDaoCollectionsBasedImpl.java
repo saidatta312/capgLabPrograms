@@ -1,18 +1,18 @@
 package com.capg.layeredarchitecture.dao;
 
-import com.capg.layeredarchitecture.model.Trainee;
+import com.capg.layeredarchitecture.model.Student;
 
 public class TraineeDaoCollectionsBasedImpl implements TraineeDao {
 
 	
-	public Trainee addTrainee(Trainee trainee) {
+	public Student addTrainee(Student trainee) {
 		// TODO Auto-generated method stub
 		return null;
 		
 	}
 
 
-	public Trainee findTrainee(int id) {
+	public Student findTrainee(int id) {
 		// TODO Auto-generated method stub
 		return null;
 		

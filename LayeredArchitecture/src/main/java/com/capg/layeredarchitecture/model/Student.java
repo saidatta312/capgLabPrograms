@@ -1,13 +1,13 @@
 package com.capg.layeredarchitecture.model;
 
-public class Trainee {
+public class Student {
 	private int id;
 	private String name;
 	private String email;
 	
-	public Trainee() { }
+	public Student() { }
 
-	public Trainee(int id, String name, String email) {
+	public Student(int id, String name, String email) {
 		super();
 		this.id = id;
 		this.name = name;
