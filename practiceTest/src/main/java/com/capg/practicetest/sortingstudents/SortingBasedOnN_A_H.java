@@ -34,26 +34,22 @@ public class SortingBasedOnN_A_H {
 	System.out.println("Student List - ");
 	students.forEach(t->System.out.println(t));
 	
-}
+}	
 
 }
-class SortByAge implements Comparator<Student>{
-@Override
-public int compare(Student s1, Student s2) {
-	return s1.age-s2.age;
-}
-}
-
-class SortByName implements Comparator<Student>{
-@Override
-public int compare(Student s1, Student s2) {
-	return s1.name.compareTo(s2.name);
-}
-}
-
-class SortByHeight implements Comparator<Student>{
-@Override
-public int compare(Student s1, Student s2) {
-	return s1.height.compareTo(s2.height);
-}
-}
+/*
+ * class SortByAge implements Comparator<Student>{
+ * 
+ * @Override public int compare(Student s1, Student s2) { return s1.age-s2.age;
+ * } }
+ * 
+ * class SortByName implements Comparator<Student>{
+ * 
+ * @Override public int compare(Student s1, Student s2) { return
+ * s1.name.compareTo(s2.name); } }
+ * 
+ * class SortByHeight implements Comparator<Student>{
+ * 
+ * @Override public int compare(Student s1, Student s2) { return
+ * s1.height.compareTo(s2.height); } }
+ */
