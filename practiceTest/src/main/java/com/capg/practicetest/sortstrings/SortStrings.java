@@ -8,8 +8,8 @@ public class SortStrings {
 		
 		Scanner scan=new Scanner(System.in);
 
-		 String names[]= {};
-		for (int i = 0; i < 6; i++) {
+		 String names[]= new String[5];
+		for (int i = 0; i < names.length; i++) {
 			System.out.println("Enter the string");
 			 names[i]= scan.next();
 			
