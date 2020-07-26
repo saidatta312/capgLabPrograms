@@ -8,24 +8,26 @@ public class SortStrings {
 		int l=names.length;
 		sort(names,l); 
 	    
-	    printArraystring(names, l);
+	    printArraystring(names,l);
 		
 
 	}
 	static void sort(String []s, int l) 
 	{ 
-	    for (int i=1 ;i<l; i++) 
-	    { 
-	        String temp = s[i]; 
-	  
-	        int j = i - 1; 
-	        while (j >= 0 && temp.length() < s[j].length()) 
-	        { 
-	            s[j+1] = s[j]; 
-	            j--; 
-	        } 
-	        s[j+1] = temp; 
-	    } 
+		String temp,sortedStr[];
+	    for(int i=0;i<l;i++) {
+	    	for(int j=0;j<i;j++) {
+				/*
+				 * if(s[i].length()>s[i+1].length()) { temp=s[i]; s[i]=s[i+1]; s[i+1]=temp;
+				 */
+	    		if(s[j].length()>s[j+1].length())
+	    		{ 
+	    			temp=s[j]; 
+	    			s[j]=s[j+1];
+	    			s[j+1]=temp;
+	    		}
+	    	}
+	    }
 	} 
 	  
 	

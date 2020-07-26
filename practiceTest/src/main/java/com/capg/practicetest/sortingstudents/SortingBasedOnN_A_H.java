@@ -26,12 +26,19 @@ public class SortingBasedOnN_A_H {
 	
 	
 	
-	System.out.println("Student Set - "); 
+	System.out.println("Student list  "); 
 	studentSet.forEach(t->System.out.println(t));
 	
 	Collections.sort(students,(t1,t2)->t1.name.compareTo(t2.name));
-	System.out.println();
-	System.out.println("Student List - ");
+	System.out.println("Student List based on ascending of name ");
+	students.forEach(t->System.out.println(t));
+	
+	Collections.sort(students,(t1,t2)->t1.age.compareTo(t2.age));
+	System.out.println("Student List based on ascending of age ");
+	students.forEach(t->System.out.println(t));
+	
+	Collections.sort(students,(t1,t2)->t1.height.compareTo(t2.height));
+	System.out.println("Student List based on ascending of height ");
 	students.forEach(t->System.out.println(t));
 	
 }	
